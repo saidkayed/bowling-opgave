@@ -128,5 +128,34 @@ public class BowlingALTest {
         assertEquals(expResult, result);
 
     }
+    
+    @Test
+    public void testSINGLE() {
+        System.out.println("SpareTest");
+        int[][] single = {
+            {3, 1},};
+        BowlingAL instance = new BowlingAL();
+        String expResult = "[4]";
+        String result = instance.PointsSum(single);
+        assertEquals(expResult, result);
+
+    }
+    
+      @Test
+    public void testSpareSpare() {
+        System.out.println("SpareTest");
+        int[][] spare = {
+        {1, 9},
+        {9, 1},
+        {5, 5},
+        {2, 2},
+        {1, 9},
+        {4, 4},};
+        BowlingAL instance = new BowlingAL();
+        String expResult = "[19, 34, 46, 50, 64, 72]" ;
+        String result = instance.PointsSum(spare);
+        assertEquals(expResult, result);
+
+    }
 
 }
