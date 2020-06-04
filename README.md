@@ -1,4 +1,4 @@
-# bowling-opgave
+# bowling-opgave Coding-Test
 
 Algoritmen befinder sig i BowlingAL.java
 
